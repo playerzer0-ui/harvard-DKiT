@@ -316,6 +316,18 @@
 							<b:ImportantField>
 								<xsl:text>b:Publisher</xsl:text>
 							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:URL</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:YearAccessed</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:MonthAccessed</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:DayAccessed</xsl:text>
+							</b:ImportantField>
 						</xsl:when>
 
 						<xsl:when test="b:GetImportantFields/b:SourceType='Report'">
@@ -5619,7 +5631,10 @@
 						</i>
 						<xsl:call-template name ="BibDisplayConfCityConfProc"/>
 						<xsl:call-template name ="BibDisplayConfPublisher"/>
+						<xsl:call-template name ="BibDisplayStrOnline"/>
 						<xsl:call-template name ="BibDisplayPages"/>
+						<xsl:call-template name ="BibDisplayURL"/>
+						<xsl:call-template name ="BibDisplayAccessedDates"/>
 					</xsl:element>
 				</xsl:when>
 				<xsl:when test="$SourceType = 'Report'">
