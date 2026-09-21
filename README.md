@@ -18,3 +18,4 @@ For now, it can do the following
 -	Online articles (titled as journal article)
 -	Online books (titled as book)
 -	Online websites (titled as Web Site)
+-   Conference paper (titled as Conference Proceedings)
